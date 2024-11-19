@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import Footer from "../../Components/Footer/Footer";
 import Header from "../../Components/Header/Header";
 import { MdClose } from "react-icons/md";
 import "./Reviews.css";
-import { useState, useRef } from "react";
 import axios from "axios";
 import Loader from "../../Components/Loader/Loader";
-import { Rating } from "@material-ui/lab";
+import { Alert } from '@material-ui/lab';
+import { Rating } from '@material-ui/lab';
 import { useSelector } from "react-redux";
+
 const AddReviews = () => {
   const RegisterSuccess = useRef();
   const { loading: userLoading, user } = useSelector((state) => state.user);
@@ -19,7 +20,7 @@ const AddReviews = () => {
   const [AddSuccess, setAddSuccess] = useState(true);
   const [message, setMessage] = useState(null);
 
-  document.title = `Add Review`;
+  document.title = "Add Review";
 
   //Add Reviews
   const addReviewsHandel = async () => {
@@ -43,14 +44,17 @@ const AddReviews = () => {
       setAddError(error.response.data.message);
     }
   };
+
   if (validationError) {
     setTimeout(() => {
       setValidationError(null);
     }, 5000);
   }
+
   const closeRegisterPop = () => {
     RegisterSuccess.current.style.display = "none";
   };
+
   return (
     <>
       <Header />

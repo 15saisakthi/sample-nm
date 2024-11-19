@@ -22,7 +22,6 @@ import OrderDetails from "./Pages/Orders/OrderDetails";
 import AllOrders from "./Pages/Orders/AllOrders";
 import AddReviews from "./Pages/Reviews/AddReviews";
 import AllReviews from "./Pages/Reviews/AllReviews";
-import About from "./Pages/About/About";
 import PageNotFound from "./Components/PageNotFound/PageNotFound";
 import AdminProducts from "./Pages/Admin/Product/AdminProducts";
 import UpdateProducts from "./Pages/Admin/Product/UpdateProducts/UpdateProducts";
@@ -78,8 +77,7 @@ const App = () => {
         />
 
         <Route path="/reviews/all" element={<AllReviews />} />
-        <Route path="/about" element={<About />} />
-
+        
         {user && user.role === "Admin" ? (
           <>
             <Route path="/admin/home" element={<AdminHome />} />
@@ -113,6 +111,8 @@ const App = () => {
 
             {/* Reviews Route */}
             <Route path="/admin/view/reviews" element={<ReviewsList />} />
+        
+
           </>
         ) : (
           ""

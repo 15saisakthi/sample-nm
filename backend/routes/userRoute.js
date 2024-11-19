@@ -35,7 +35,7 @@ route.post("/send-reset-password-email", sendUserPasswordResetEmail);
 route.post("/reset-password/:id/:token", userPasswordReset);
 
 route.put("/changePassword", isAuthUser, changeUserPassword);
-route.get("/getloggeduser", isAuthUser, getLoggedUser);
+//route.get("/getloggeduser", isAuthUser, getLoggedUser);
 route.get("/logOut", isAuthUser, loggedOutUser);
 
 route.post("/new/order", isAuthUser, newOrder);

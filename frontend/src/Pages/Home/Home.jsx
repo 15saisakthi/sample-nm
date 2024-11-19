@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import Header from "../../Components/Header/Header";
+import products from "../../Pages/Product/Products";
 import freshFruits from "../../Assets/Images/freshFruits.png";
 import featureImg1 from "../../Assets/Images/feature-img-1.png";
 import featureImg2 from "../../Assets/Images/feature-img-2.png";
@@ -115,11 +116,10 @@ const Home = () => {
                   of low quality but highly priced.
                 </p>
                 <Link to="/products">
-                  {" "}
-                  <button className="shopNowBtn">Shop Now</button>{" "}
+                  <button className="shopNowBtn">Shop Now</button>
                 </Link>
               </div>
-            </section>
+            </section> 
           </div>
 
           {/* Our Features */}

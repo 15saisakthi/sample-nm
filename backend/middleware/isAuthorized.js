@@ -1,3 +1,4 @@
+
 const sendError = require("../utils/sendError");
 
 const isAuthorized = async (req, res, next) => {

@@ -6,7 +6,7 @@ import "./About.css";
 
 const About = () => {
   const visitInstagram = () => {
-    window.location = "https://instagram.com/khamkar_pradip25";
+    window.location = "https://instagram.com";
   };
   document.title = "About Us";
   return (
@@ -21,17 +21,16 @@ const About = () => {
         <div className="about-section-box">
           <div>
             <div>
-              <img
+              {/* <img
                 style={{ width: "15rem", height: "15rem", margin: "2rem 0" }}
-                src="https://res.cloudinary.com/dmcm71zbt/image/upload/v1670126233/avatar/profile-pic_1_tozinc.png"
+                src=""
                 alt="Founder"
-              />
-              <h1>Pradip Khamkar</h1>
-              <button onClick={visitInstagram}>Visit Instagram</button>
+              /> */}
+              <h1>Team</h1>
+              <button onClick={Oombu}>Visit Instagram</button>
               <br />
               <p>
-                This is a sample wesbite made by @Pradip Khamkar. Only with the
-                purpose to Learning MERN Stack
+                This is a sample wesbite
               </p>
             </div>
           </div>

@@ -7,6 +7,7 @@ import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import { RiEmotionHappyLine } from "react-icons/ri";
 import { Rating } from "@material-ui/lab";
+
 import NotFoundCart from "../../Components/NotFoundCart/NotFoundCart";
 
 const AllReviews = () => {
@@ -20,12 +21,6 @@ const AllReviews = () => {
     dispatch(getAllReviewsAction());
   }, [dispatch]);
 
-  const options = {
-    size: "large",
-    value: reviews && reviews.ratings ? reviews.ratings : 0,
-    readOnly: true,
-    precision: 0.5,
-  };
 
   return (
     <>

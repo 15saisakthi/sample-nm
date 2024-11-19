@@ -129,7 +129,7 @@ const Products = () => {
           </h1>
           {productError || categoryError ? (
             <>
-              <NotFoundCart msg={"Something Went's To Wrong"} />
+              <NotFoundCart msg={"vera edhana project paathuko"} />
               <br />
             </>
           ) : (

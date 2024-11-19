@@ -31,9 +31,9 @@ app.use(expressFileUpload());
 
 //Config Cloudniary
 cloudinary.config({
-  cloud_name: process.env.CLOUD_NAME,
+  cloud_name: process.env.dh5mz3sja,
   api_key: process.env.CLOUD_API_KEY,
-  api_secret: process.env.CLOUD_API_SECRET_KEY,
+  api_secret: process.env.m3LwfIGd11Tn36bKZYzbSn9SxUc,
 });
 
 app.listen(process.env.PORT, "localHost", () => {
